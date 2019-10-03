@@ -16,6 +16,7 @@ const CommentDetail = props => {
                     </span>
                 </div>
                 <div className="text">
+                    {/* Passing the comment text into the card*/}
                     {props.commentText}
                 </div>
             </div>

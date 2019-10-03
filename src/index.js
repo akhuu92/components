@@ -8,6 +8,13 @@ const App = () => {
     return (
       <div className="ui container comments">
         <ApprovalCard>
+            <div>
+              <h4>Warrning!</h4>
+              Are you sure you want to do this?
+            </div>
+        </ApprovalCard>
+
+        <ApprovalCard>
           <CommentDetail 
             author="Mike 'MysteryMeat' Pang" 
             timeAgo="Today at 4:20PM" 
@@ -15,18 +22,22 @@ const App = () => {
             avatar={faker.image.avatar()}
           />
         </ApprovalCard>
-        <CommentDetail 
+        <ApprovalCard>
+          <CommentDetail 
           author="Johnson 'Jdeasaur' Dea" 
           timeAgo="Yesterday at 4:20PM" 
           commentText="Me and Michael."
           avatar={faker.image.avatar()}
-        />
-        <CommentDetail 
+          />
+        </ApprovalCard>
+        <ApprovalCard>
+          <CommentDetail 
           author="Calvin 'Smeggycliff' Ouk" 
           timeAgo="Tomorrow at 4:20PM" 
           commentText="Dat Deuh!"
           avatar={faker.image.avatar()}
-        />
+          />
+        </ApprovalCard>
       </div>  
     );
 }
